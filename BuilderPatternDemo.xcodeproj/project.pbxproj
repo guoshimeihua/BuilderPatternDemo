@@ -14,6 +14,10 @@
 		32223A3E1B9F2BCA00BA6830 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32223A3D1B9F2BCA00BA6830 /* Images.xcassets */; };
 		32223A411B9F2BCA00BA6830 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32223A3F1B9F2BCA00BA6830 /* LaunchScreen.xib */; };
 		32223A4D1B9F2BCA00BA6830 /* BuilderPatternDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32223A4C1B9F2BCA00BA6830 /* BuilderPatternDemoTests.m */; };
+		32223A591B9F2C3000BA6830 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 32223A581B9F2C3000BA6830 /* Character.m */; };
+		32223A5C1B9F2D4F00BA6830 /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 32223A5B1B9F2D4F00BA6830 /* CharacterBuilder.m */; };
+		32223A621B9F30C000BA6830 /* StandarCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 32223A611B9F30C000BA6830 /* StandarCharacterBuilder.m */; };
+		32223A651B9F378300BA6830 /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 32223A641B9F378300BA6830 /* ChasingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		32223A461B9F2BCA00BA6830 /* BuilderPatternDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuilderPatternDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32223A4B1B9F2BCA00BA6830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32223A4C1B9F2BCA00BA6830 /* BuilderPatternDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderPatternDemoTests.m; sourceTree = "<group>"; };
+		32223A571B9F2C3000BA6830 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		32223A581B9F2C3000BA6830 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		32223A5A1B9F2D4F00BA6830 /* CharacterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterBuilder.h; sourceTree = "<group>"; };
+		32223A5B1B9F2D4F00BA6830 /* CharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
+		32223A601B9F30C000BA6830 /* StandarCharacterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandarCharacterBuilder.h; sourceTree = "<group>"; };
+		32223A611B9F30C000BA6830 /* StandarCharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandarCharacterBuilder.m; sourceTree = "<group>"; };
+		32223A631B9F378300BA6830 /* ChasingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
+		32223A641B9F378300BA6830 /* ChasingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 		32223A2F1B9F2BCA00BA6830 /* BuilderPatternDemo */ = {
 			isa = PBXGroup;
 			children = (
+				32223A561B9F2BDF00BA6830 /* BuilderPattern */,
 				32223A341B9F2BCA00BA6830 /* AppDelegate.h */,
 				32223A351B9F2BCA00BA6830 /* AppDelegate.m */,
 				32223A371B9F2BCA00BA6830 /* ViewController.h */,
@@ -117,6 +130,21 @@
 				32223A4B1B9F2BCA00BA6830 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32223A561B9F2BDF00BA6830 /* BuilderPattern */ = {
+			isa = PBXGroup;
+			children = (
+				32223A571B9F2C3000BA6830 /* Character.h */,
+				32223A581B9F2C3000BA6830 /* Character.m */,
+				32223A5A1B9F2D4F00BA6830 /* CharacterBuilder.h */,
+				32223A5B1B9F2D4F00BA6830 /* CharacterBuilder.m */,
+				32223A601B9F30C000BA6830 /* StandarCharacterBuilder.h */,
+				32223A611B9F30C000BA6830 /* StandarCharacterBuilder.m */,
+				32223A631B9F378300BA6830 /* ChasingGame.h */,
+				32223A641B9F378300BA6830 /* ChasingGame.m */,
+			);
+			name = BuilderPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32223A5C1B9F2D4F00BA6830 /* CharacterBuilder.m in Sources */,
+				32223A621B9F30C000BA6830 /* StandarCharacterBuilder.m in Sources */,
 				32223A391B9F2BCA00BA6830 /* ViewController.m in Sources */,
 				32223A361B9F2BCA00BA6830 /* AppDelegate.m in Sources */,
 				32223A331B9F2BCA00BA6830 /* main.m in Sources */,
+				32223A651B9F378300BA6830 /* ChasingGame.m in Sources */,
+				32223A591B9F2C3000BA6830 /* Character.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
